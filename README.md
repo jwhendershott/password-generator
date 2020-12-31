@@ -26,4 +26,4 @@ The assignment objective was to create code through javascript for an applicatio
 
 ## License
 
-Copyright (c) 2020 Jacob Hendershott
+Copyright © 2020 Jacob Hendershott

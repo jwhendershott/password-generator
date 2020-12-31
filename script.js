@@ -25,18 +25,18 @@ generateBtn.addEventListener("click", generatePassword);
     if (!length) {
       alert("A value is required.");
     }
-
+// Alert if password length does not meet required parameters
     while (length < 8 || length > 128) {
       length = parseInt(
         prompt("Password must be within 8 and 128 characters.")
       );
     }
-
+// Prompts for user input
     confirmLower = confirm("Will this contain lowercase letters?");
     confirmUpper = confirm("Will this contain uppercase letters?");
     confirmNumber = confirm("Will this contain numbers?");
     confirmChar = confirm("Will this contain special characters?");
-
+// Alert if no user input is provided
     if (!confirmChar && !confirmLower && !confirmUpper && !confirmNumber) {
       alert("You must provide an password information.");
     }
@@ -82,7 +82,7 @@ function generateString(choices) {
   return newPassword;
 }
 
-//Generator Functions
+// Character generator functions
 function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97).toLowerCase();
 }

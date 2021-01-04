@@ -18,7 +18,7 @@ generateBtn.addEventListener("click", generatePassword);
   function generatePassword() {
     length = parseInt(
       prompt(
-        "How many character would you like your password to be? Choose between 8 and 128"
+        "How many characters would you like your password to be? Choose between 8 and 128"
       )
     );
     
